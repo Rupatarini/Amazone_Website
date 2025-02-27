@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .s {
+            font-family: Arial, sans-serif;
+            border: 1px solid #ddd;
+            height: 180px;
+            width: 350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-size: 12px;
+        }
+        .r {
+            margin-right: auto;
+            height: 39px;
+            width: 250px;
+            border-radius: 1px;
+        }
+        button {
+            width: 130%;
+            height: 35px;
+            border-radius: 10px;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            color: grey;
+            text-align: center;
+            width: 350px;
+            margin: 10px auto;
+        }
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex-grow: 1;
+            border-top: 1px solid grey;
+            margin: 0 10px;
+        }
+    .g{
+        height: 100%; 
+            margin: 0; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+        .inline-text {
+            display: inline;
+            margin-right: 10px; 
+            color:rgb(43, 180, 226);
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="logo.png" width="150" height="50" alt="Logo">
+    </div>
+    <div class="s">
+        <h1>Sign in</h1>
+        <label for="email"><b>Mobile number or email</b></label><br>
+        <input type="email" style="width: 320px; height:25px" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <a href="webpage.html" style="text-decoration: none;">
+            <div class="r">
+                <button style="background-color: yellow;">Continue</button>        
+            </div>
+            </a>
+        <p>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+    </div>
+    <p class="divider">New to Amazon?</p>
+    <div class="g">
+          <br><br>
+        <a href="registeration_page.html" style="text-decoration: none;">
+        <button style="width:327px; height:29px; background-color:white; text-decoration: underline;">
+          Creat your Amazon account</button>
+        </div>
+        <hr>
+        <p style="text-align:center">
+            <a href="URL" class="inline-text">Conditions of Use</a>
+            <a href="url" class="inline-text">Notice of Use</a>
+            <a href="url" class="inline-text">Help</a>
+        </p>
+        <p style="text-align:center;">&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    <br>
+</body>
+</html>

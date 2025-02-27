@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<style>
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .s{
+        font-family: Arial, sans-serif;
+        border:1px solid #ddd;
+        height:510px;
+        width:350px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+        padding:20px;
+        font-size: 14px;
+    }
+    .r{
+        margin-right: auto;
+        height:39px;
+        width:250px;
+    }
+    button{
+        width :130%;
+        height:30px;
+        border-radius:10px;
+    }
+    .divider {
+            display: flex;
+            align-items: center;
+            color: grey;
+            text-align: center;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex-grow: 1;
+            border-top: 1px solid grey;
+            margin: 0 10px;
+        }
+    .inline-text {
+            display: inline;
+            margin-right: 10px; 
+            color:rgb(43, 180, 226);
+            text-align:center;
+        }
+</style>
+<br>
+    <div class="image-container">
+    <img src="logo.png"width="150" height="50" alt="Description of Image">
+     </div>
+    <div class="s">
+        <h1>Create Account</h1>
+        <label for="name">Your name</label><br>
+        <input type="text"style="width: 320px; height:25px" id="name" placeholder="First and last name" required>
+          <br><br>
+          <label for="email">Mobile number or email</label><br>
+          <input type="email"style="width: 320px; height:25px" id="email" placeholder="Enter your email" required>
+          <br><br>
+          <label for="password">Password</label>
+           <input type="password"style="width: 320px; height:25px" id="password" placeholder="At least 6 characters" minlength="6" required>
+            <p style="text-align: center;">Passwords must be at least 6 characters.</p>
+            <label for="repassword">Re-enter password</label>
+            <input type="password"style="width: 320px; height:25px" id="repassword" placeholder="Re-enter your password"><br><br>
+            <a href="webpage.html" style="text-decoration: none;">
+            <div class="r">
+                <button style="background-color: yellow;">Continue</button>        
+            </div>
+            </a>
+           <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>       
+           <p class="divider">Already have an account?</p>
+            <a href="signin.html" style="text-decoration: none;">
+                <button style="width:327px; height:29px; background-color:grey; text-decoration: underline;">
+                  Sign in</button>
+              </a><br><br><br>
+            </div><br>
+            <hr>
+        <p style="text-align:center">
+            <a href="URL" class="inline-text">Conditions of Use</a>
+            <a href="url" class="inline-text">Notice of Use</a>
+            <a href="url" class="inline-text">Help</a>
+        </p>
+        <p style="text-align:center;">&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    <br>
+</body>
+</html>
+  

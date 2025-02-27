@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+nav{
+    /* position: fixed; */
+    padding: 10px;
+    display: flex;
+    gap : 10px;
+    background-color: black;
+    color : white;
+    justify-content: space-between;
+}
+.logo{
+    height: 40px;
+}
+
+.cart{
+    padding: 5px;
+    text-align: left;
+    background-color: transparent;
+    border-style: none;
+    color : white;
+}
+i{
+    color : white;
+    font-size : 20px;
+    margin-right : 10px;;
+}
+span{
+    font-weight: 600;
+    font-size : 16px;
+}
+.heading{
+    font-size: 32px;
+}
+.container{
+    margin : 0 auto;
+    width : 75%;
+    height: 100vh;
+    display: flex;
+}
+.options{
+    width: 70%;
+}
+.options-container{
+    margin : 15px 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.info{
+    font-size: 14px;
+  
+    margin: 10px 0;
+    width: 50%;
+}
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+}
+.option-title{
+    display: inline-block;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.payment-option-container{
+    margin : 20px auto;
+    width : 95%;
+    border : 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 15px;
+}
+.amazon-pay{
+    font-size: 13px;
+    font-weight: 700;
+}
+.amazon-pay-code{
+    padding: 5px;
+    margin-left : 20px;
+    margin-top: 20px;
+}
+.apply{
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid rgb(220, 220, 220);
+    margin-bottom: 20px;
+}
+.pay-radio{
+    display: flex;
+    flex-direction: column;
+    gap : 30px;
+}
+.product-img{
+    width: 70px;
+    height:60px;
+}
+.product-info{
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 10px;
+    width: 50%;
+    display: inline-block;
+}
+.info-small{
+    font-size: 12px;
+    margin: 10px 0 ;
+}
+.bill{
+    width: 30%;
+}
+.payment-btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    margin-bottom: 20px;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+.info-large{
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.payment-btn-container{
+    width: 200px;
+}
+</style>
+
+<body>
+    <nav>
+        <img class="logo" src="logo12.jpg" alt="logo">
+        <p class="heading">Secure checkout</p>
+        <button class="cart"><i class="fa-solid fa-cart-shopping" style="color: #fafafa;"></i><span>Cart</span></button>
+    </nav>
+    <div class="container">
+        <div class="options">
+            <div class="address-contanier options-container">
+                <h3 class="option-title">Delivering to RUPESWARI TARINI</h3>
+                <a href="#">Change</a>
+                <p class="info">Block 165-SF4 JNNURM New Colony Marikavalasa ,Madhurwada,visakhapatnam
+                </p>
+                <a href="#">Add delivery instructions</a>
+            </div>
+            <div class="payment-container options-container">
+                <h3 class="options-title">Payment method</h3>
+                <div class="payment-option-container">
+                    <h3 class="options-title">Your available balance</h3>
+                    <hr><br>
+                    <input type="radio" name="amazon-pay">
+                    <label for="amazon-pay" class="amazon-pay">Amazon Pay Balance &#8377; 0.00 Unavailable</label><br>
+                    <input type="text" class="amazon-pay-code" placeholder="Enter Code">
+                    <button class="apply">Apply</button>
+                    <h3 class="options-title">Another payment method</h3>
+                    <hr><br>
+                    <div class="pay-radio">
+                        <div>
+                            <input type="radio" name="amazon-pay">
+                            <label for="amazon-pay" class="amazon-pay">
+                                Credit or debit card</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="amazon-pay">
+                            <label for="amazon-pay" class="amazon-pay">Net Banking</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="amazon-pay">
+                            <label for="amazon-pay" class="amazon-pay">
+                                Other UPI Apps</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="amazon-pay">
+                            <label for="amazon-pay" class="amazon-pay">
+                                EMI</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="amazon-pay">
+                            <label for="amazon-pay" class="amazon-pay">
+                                Cash on Delivery/Pay on Delivery</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-btn-container">
+                    <button class="payment-btn">
+                        Use this payment method
+                    </button>
+                </div>
+            </div>
+            <div class="product-container options-container">
+                <h3 class="option-title">Arriving 28 Dec 2024</h3>
+                <a href="#">Review Order</a>
+                <p class="info">If you order in the next 4 hours and 57 minutes Details</p>
+                <div class="product">
+                    <img class="product-img" src="book13.jpg" alt="product-img">
+                    <p class="product-info"> Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, 
+                        and Techniques to Build Intelligent Systems, Third Edition (Full Colour Print)</p>
+                </div>
+            </div>
+            <div class="info-container options-container">
+                <p class="info-small">
+                    Need help? Check our help pages or contact us 24x7
+                </p>
+                <p class="info-small">
+                    Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: 
+                    Concepts, Tools, and Techniques to Build Intelligent Systems, Third Edition (Full Colour Print)
+                </p>
+                <p class="info-small">
+                    See Amazon.in's Return Policy.
+                </p>
+                <a href="">Back to cart</a>
+            </div>
+        </div>
+        <div class="bill">
+            <div class="bill-contanier options-container">
+                <button class="payment-btn">
+                    Use this payment method
+                </button>
+                <hr>
+                <div class="items">
+                    <span class="info-small">items:</span>
+                    <span class="info-small">₹550.00</span>
+                </div>
+                <div class="items">
+                    <span class="info-small">Delivery:</span>
+                    <span class="info-small">₹99.00</span>
+                </div>
+                <div class="items">
+                    <span class="info-small">Total:</span>
+                    <span class="info-small">₹649.00</span>
+                </div>
+                <div class="items">
+                    <span class="info-small">Free Delivery</span>
+                    <span class="info-small">-₹99.00</span>
+                </div>
+                <div class="items">
+                    <span class="info-large">Order Total:</span>
+                    <span class="info-large">₹550.00</span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
